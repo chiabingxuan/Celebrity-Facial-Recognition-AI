@@ -6,7 +6,7 @@ This project was inspired by freeCodeCamp's course on "PyTorch for Deep Learning
 Using PyTorch, an inbuilt ResNet18 convolutional neural network (CNN) was trained further via transfer learning, enabling it to identify the faces of 105 celebrities. `list_of_celebrities.txt` contains the names of all these celebrities.
 
 ## Methodology
-Image data was sourced from the ["Pins Face Recognition" dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition), which contains 17534 cropped images of 105 celebrities. `setup.py` was the Python script used to format the data appropriately, before splitting them into training and testing datasets. The train-test split used was 75% for training and 25% for testing.
+Image data was sourced from the ["Pins Face Recognition" dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition), which contains 17534 cropped images of 105 celebrities. `handle_data.py` was the Python script used to format the data appropriately, before splitting them into training and testing datasets. The train-test split used was 75% for training and 25% for testing.
 
 The transform used on the training data was as follows:
 ```
