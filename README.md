@@ -50,4 +50,4 @@ In `celebrity_recognition_project.ipynb`:
    * If you wish to handle the full data from all 105 celebrities: Run code chunk 2b
 3. Run code chunks 8 - 9 (Testing phase)
 
-**Note:** In code chunk 9, the model will attempt to carry out custom image prediction. Before running this code chunk, place all your custom images of celebrities (either .jpg, .jpeg or .png format) inside the same `celebrity_recognition_ai` folder on Google Drive. For better performance, do ensure that each custom image is cropped such that only the celebrity's face is being shown.
+**Note:** In code chunk 9, the model will attempt to carry out custom image prediction. If you wish to try this out, please place all your custom images of celebrities (either .jpg, .jpeg or .png format) inside the same `celebrity_recognition_ai` folder on Google Drive. For better performance, do ensure that each custom image is cropped such that only the celebrity's face is being shown. Before running the code block, do also remember to edit the code according to the file name of your custom image.
