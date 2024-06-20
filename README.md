@@ -6,7 +6,7 @@ This project was inspired by freeCodeCamp's course on "PyTorch for Deep Learning
 Using PyTorch, an inbuilt ResNet18 convolutional neural network (CNN) was trained further via transfer learning, enabling it to identify the faces of 105 celebrities (`list_of_celebrities.txt` contains the names of all 105 celebrities).
 
 ## Methodology
-Image data was sourced from the ["Pins Face Recognition" dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition), which consisted of 17534 faces belonging to 105 celebrities. `setup.py` was the Python script used to format the data appropriately, before splitting them into training and testing datasets. The train-test split used was 75% for training and 25% for testing.
+Image data was sourced from the ["Pins Face Recognition" dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition), which contains 17534 cropped images of 105 celebrities. `setup.py` was the Python script used to format the data appropriately, before splitting them into training and testing datasets. The train-test split used was 75% for training and 25% for testing.
 
 The transform used on the training data was as follows:
 ```
@@ -39,11 +39,15 @@ After training for 50 epochs, the model attained a training accuracy of 94.54% a
 Firstly, make sure you get the pretrained state dict (`celebrity_recognition_model.pth`) and the image data (`full_data.zip`) from [here](https://drive.google.com/drive/folders/1C2Z8bg6KHHdtmWkwpubrsvrwxxnZhmtf?usp=sharing). On Google Drive, create a folder named `celebrity_recognition_ai` within My Drive and place the two files inside this folder.
 
 ### Use the pretrained model
+In `celebrity_recognition_project.ipynb`:
 1. Run code chunks 1, 2b and 3
 2. Run code chunks 7 - 9
 
 ### Train and test your own model
+In `celebrity_recognition_project.ipynb`:
 1. Run code chunks 1 - 6 (Training phase)
    * If you wish to handle a small dataset from only 4 celebrities: Run code chunk 2a
    * If you wish to handle the full data from all 105 celebrities: Run code chunk 2b
 3. Run code chunks 8 - 9 (Testing phase)
+
+**Note:** In code chunk 9, the model will attempt to carry out custom image prediction. Before running this code chunk, place all your custom images of celebrities (either .jpg, .jpeg or .png format) inside the same `celebrity_recognition_ai` folder on Google Drive. For better performance, do ensure that each custom image is cropped such that only the celebrity's face is being shown.
