@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 def setup(celeb_names=None, training_prop=0.75, folders_unedited=False):
-    absolute_path = Path("C:/Users/Bing Xuan/Desktop/Stuff/Programming Projects/Celebrity Recognition AI")
+    absolute_path = Path("")  # please add the path to your working directory
 
     # Check for invalid celebrity names
     folders = os.listdir(absolute_path / "105_classes_pins_dataset")
@@ -72,6 +72,6 @@ def setup(celeb_names=None, training_prop=0.75, folders_unedited=False):
 
 
 if __name__ == "__main__":
-    # chosen_celeb_names = ["ANDY SAMBERG", "TOM CRUISE", "AVRIL LAVIGNE", "GWYNETH PALTROW",
-    #                      "HARRY STYLES"]  # choose your celebrities here
-    setup()
+    chosen_celeb_names = ["ANDY SAMBERG", "TOM CRUISE", "AVRIL LAVIGNE", "GWYNETH PALTROW",
+                          "HARRY STYLES"]  # choose your celebrities here (write names in all caps)
+    setup(celeb_names=chosen_celeb_names, folders_unedited=False)
