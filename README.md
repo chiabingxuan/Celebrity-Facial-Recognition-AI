@@ -35,6 +35,15 @@ After training for 50 epochs, the model attained a training accuracy of 94.54% a
 
 ![training results](https://github.com/chiabingxuan/Celebrity-Facial-Recognition-AI/assets/155958349/7bae28db-b45f-491d-b71b-f1ecd4282f36)
 
+## How to Use
+Firstly, make sure you get the pretrained state dict (`celebrity_recognition_model.pth`) and the image data (`full_data.zip`) from [here](https://drive.google.com/drive/folders/1C2Z8bg6KHHdtmWkwpubrsvrwxxnZhmtf?usp=sharing). On Google Drive, create a folder named `celebrity_recognition_ai` within My Drive and place the two files inside this folder.
 
+### Use the pretrained model
+1. Run code chunks 1, 2b and 3
+2. Run code chunks 7 - 9
 
-Get the necessary files here: https://drive.google.com/drive/folders/1C2Z8bg6KHHdtmWkwpubrsvrwxxnZhmtf?usp=sharing
+### Train and test your own model
+1. Run code chunks 1 - 6 (Training phase)
+   * If you wish to handle a small dataset from only 4 celebrities: Run code chunk 2a
+   * If you wish to handle the full data from all 105 celebrities: Run code chunk 2b
+3. Run code chunks 8 - 9 (Testing phase)
