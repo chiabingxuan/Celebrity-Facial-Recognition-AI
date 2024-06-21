@@ -16,7 +16,7 @@ data_transform = v2.Compose([
     v2.RandomHorizontalFlip(p=0.5),
     v2.RandomVerticalFlip(p=0.5),
     v2.ColorJitter(),
-    v2.ToTensor()
+    v2.ToTensor()   # will be deprecated soon; can use v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)]) instead
 ])
 ```
 Transfer learning was carried out in the following manner:
