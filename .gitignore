@@ -1,6 +1,5 @@
 */**/*.jpg
-
 .idea
-
+data/full_data.zip
 *.pth
 temp

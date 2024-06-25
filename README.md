@@ -51,3 +51,18 @@ In `celebrity_recognition_project.ipynb`:
 3. Run code chunks 8 - 9 (Testing phase)
 
 **Note:** In code chunk 9, the model will attempt to carry out custom image prediction. If you wish to try this out, please place all your custom images of celebrities (either .jpg, .jpeg or .png format) inside the same `celebrity_recognition_ai` folder on Google Drive. For better performance, do ensure that each custom image is cropped such that only the celebrity's face is being shown. Before running the code block, do also remember to edit the code according to the file name of your custom image.
+
+```mermaid
+flowchart TD
+    1(start)
+    2(end)
+
+    3[Load Data from Samples.zip]
+    4[Train Model]
+    5{Cost Function}
+
+    1 --> 3 --> 4 --> 5
+    5 --> 4
+    5 --> 2
+
+```
